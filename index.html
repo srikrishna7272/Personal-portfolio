@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/sk logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Srikrishna</span><br>Karnati</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/srikrishna (1).jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Srikrishna Karnati, a 24-year-old Web developer. 
+                    I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications. I have 2years of work experience as a Software Engineer.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        
+                        <li><span>2021 - 2022</span><br>Teaching Assistant for Multiple Courses at CSULB.</li>
+                        <li><span>2021 - 2022</span><br>Python Instructor at CSULB.</li>
+                        <li><span>2019 - 2021</span><br>Software Engineer.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        
+                        <li><span>2023</span><br>Masters in Computer Science from CSU Long Beach.</li>
+                        <li><span>2019</span><br>Bachelors in Computer Science from JNTU Hyderabad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I have more than 2 years of experience as a web developer. I develop the user interface, websites and ux element interactions. </p>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I have more than 2 years of experience as a web developer. I develop the user interface, websites and ux element interactions. </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/moshify.png">
+                <div class="layer">
+                    <h3>Cloud hosting Platform</h3>
+                    <a href="https://srikrishna7272.github.io/moshify/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pong.png">
+                <div class="layer">
+                    <h3>Pong game</h3>
+                    <a href="https://srikrishna7272.github.io/pong-game/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/paint clone.png">
+                <div class="layer">
+                    <h3>Paint Clone</h3>
+                    <a href="https://srikrishna7272.github.io/paint-clone/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/youtube clone.png">
+                <div class="layer">
+                    <h3>Youtube clone</h3>
+                    <a href="https://srikrishna7272.github.io/youtube-homepage-clone---HTML---CSS/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/picture-in-picture.png">
+                <div class="layer">
+                    <h3>picture-in-picture</h3>
+                    <a href="https://srikrishna7272.github.io/---picture-in-picture/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/splash page.png">
+                <div class="layer">
+                    <h3>splash page</h3>
+                    <a href="https://srikrishna7272.github.io/splash-page/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/quote-generator.png">
+                <div class="layer">
+                    <h3>Quote-Generator</h3>
+                    <a href="https://srikrishna7272.github.io/---template-quote-generator/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/music player.png">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <a href="https://srikrishna7272.github.io/music-player/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/navigation.png">
+                <div class="layer">
+                    <h3>Navigation project</h3>
+                    <a href="https://srikrishna7272.github.io/basic-portfolio/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/animated.png">
+                <div class="layer">
+                    <h3>Animated Website Template</h3>
+                    <a href="https://srikrishna7272.github.io/website-template/#pablo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/infinity-scroll.png">
+                <div class="layer">
+                    <h3>Infinity scroll</h3>
+                    <a href="https://srikrishna7272.github.io/---infinity-scroll/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/little-lemon.png">
+                <div class="layer">
+                    <h3>little lemon restaurent website</h3>
+                    <a href="https://srikrishna7272.github.io/little-lemon/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/museum-of-candy.png">
+                <div class="layer">
+                    <h3>Museum of candy</h3>
+                    <a href="https://srikrishna7272.github.io/museum-of-candy---Bootstrap/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pricing panel.png">
+                <div class="layer">
+                    <h3>pricing panel</h3>
+                    <a href="https://srikrishna7272.github.io/pricing-panel/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/calculator.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <a href="https://srikrishna7272.github.io/calculator/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/srikrishna7272" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> karnati7272@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +15629391520</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100004473139155" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/srikrishnakarna" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/srikrishna_karnati/?igshid=MjEwN2IyYWYwYw%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/srikrishna-karnati-309706182/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/srikrishna7272" target="_blank"><i class="fab fa-github"></i></a>
+
+                </div>
+                <a href="images/SRIKRISHNA-RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Srikrishna karnati. Made wtih <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsiKpddQCM2O8TuQI-0K-RwU4pgOefRoKxT9K4I3DxGziUQv0mua_vepc3hnFku2A-PA/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
